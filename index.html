@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robin Linux OS - Official Portal</title>
+    <!-- ربط اللوجو كأيقونة للمتصفح -->
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
         * {
             box-sizing: border-box;
@@ -25,6 +27,15 @@
             border-radius: 12px;
             background-color: #111827;
             box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+        .logo-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #38bdf8;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
         }
         h1 {
             font-size: 2.5rem;
@@ -112,7 +123,10 @@
 <body>
 
     <div class="container">
-        <h1>ROBIN LINUX OS</h1>
+        <!-- عرض اللوجو المدور في رأس الموقع -->
+        <img src="logo.png" alt="Robin Linux Logo" class="logo-img">
+        
+        <h1>ROBIN LINUX OS v1.0</h1>
         <div class="subtitle">[ THE ULTIMATE CYBER & PROGRAMMING ENVIRONMENT ]</div>
         
         <p>
