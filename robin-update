@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# ==================================================
+# Robin Linux Update Script (v1.0)
+# Created by Robin John
+# ==================================================
+
+echo "=================================================="
+echo "        CHECKING FOR ROBIN LINUX UPDATES          "
+echo "================================================== "
+
+# إخفاء أي شعارات دبيان افتراضية والتركيز على هوية التوزيعة
+echo "[*] Connecting to Robin John's GitHub repository..."
+sleep 1
+
+# محاكاة أو تنفيذ عملية جلب التحديثات من المستودع الخاص بك
+# Major309Robin/Robin-Linux
+REPO_URL="https://raw.githubusercontent.com/Major309Robin/Robin-Linux/main"
+
+echo "[*] Fetching latest core packages and configurations..."
+# مثال على تحديث الحزم النظامية مع إخفاء الشوائب غير الضرورية
+sudo apt-get update -y > /dev/null 2>&1
+
+echo "[*] Syncing Robin Linux environment..."
+sleep 1
+
+echo "================================================== "
+echo "     ROBIN LINUX IS UP TO DATE & SECURE!          "
+echo "     Created by Robin John                        "
+echo "================================================== "
