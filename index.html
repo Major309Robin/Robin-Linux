@@ -3,55 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin Linux OS - The Ultimate Cyber & Programming OS</title>
+    <title>Robin Linux OS - Official Portal</title>
     <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
         }
-        .logo {
-            width: 150px;
-            height: 150px;
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+        }
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #000000;
+            border-bottom: 1px solid #222;
+        }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-brand img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        .nav-brand span {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #00ff66;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #b3b3b3;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #00ff66;
+        }
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 20px 30px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        header p {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        /* Cards Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 20px 20px 60px 20px;
+        }
+        .card {
+            background-color: #141414;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00ff66;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
             object-fit: contain;
             margin-bottom: 20px;
-            border-radius: 10px;
         }
-        h1 {
-            color: #00ff66;
-            font-size: 2.5rem;
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #fff;
         }
-        p {
-            font-size: 1.2rem;
-            color: #cccccc;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
+        .card ul {
+            text-align: left;
+            list-style: none;
+            margin-bottom: 25px;
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+        .card ul li {
+            margin-bottom: 8px;
         }
         .btn {
             background-color: #00ff66;
-            color: #000000;
-            padding: 12px 25px;
+            color: #000;
+            padding: 10px 25px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
             display: inline-block;
+            transition: background-color 0.3s;
         }
         .btn:hover {
             background-color: #00cc52;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #666;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
         }
     </style>
 </head>
 <body>
 
-    <!-- مكان اللوجو (تأكد أن اسم صورة اللوجو مطابق للصورة المرفوعة في المستودع) -->
-    <img src="logo.png" alt="Robin Linux OS Logo" class="logo">
+    <!-- القائمة العلوية بعد التعديل (فقط Download و Support و About) -->
+    <nav>
+        <div class="nav-brand">
+            <img src="logo.png" alt="Logo">
+            <span>ROBIN LINUX</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Download</a></li>
+            <li><a href="https://wa.me/201558640279" target="_blank">Support</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-    <h1>Robin Linux OS</h1>
-    <p>Official website for <strong>Robin Linux OS</strong>. Lightweight, secure, and fast operating system designed for developers, ethical hackers, and power users.</p>
+    <!-- العنوان الرئيسي -->
+    <header>
+        <h1>Choose your Robin Linux</h1>
+        <p>The ultimate lightweight operating system for developers and ethical hackers</p>
+    </header>
 
-    <a href="#" class="btn">Download ISO</a>
+    <!-- كروت التحميل والإصدارات -->
+    <div class="container">
+        <!-- كارت النسخة الأساسية -->
+        <div class="card">
+            <img src="logo.png" alt="Installer ISO">
+            <h3>Installer Images</h3>
+            <ul>
+                <li>✔ Direct access to hardware</li>
+                <li>✔ Customized Robin kernel</li>
+                <li>✔ Optimized for performance</li>
+            </ul>
+            <a href="#" class="btn">Download ISO</a>
+        </div>
+
+        <!-- كارت النسخة المحمولة / المتقدمة -->
+        <div class="card">
+            <img src="logo.png" alt="Live USB">
+            <h3>Live USB / Persistent</h3>
+            <ul>
+                <li>✔ Portable system on USB</li>
+                <li>✔ Persistence support (Ventoy)</li>
+                <li>✔ Ready-to-go tools</li>
+            </ul>
+            <a href="#" class="btn">Download Live</a>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2026 Robin Linux OS. Built by Robin John. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
