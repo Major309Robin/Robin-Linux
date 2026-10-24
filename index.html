@@ -1,179 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- العنوان المخصص اللي هيظهر في جوجل -->
     <title>Robin Linux OS - The Ultimate Cyber & Programming OS</title>
-    
-    <!-- الوصف المخصص اللي هيظهر تحت العنوان في جوجل بدلاً من كلام جيت هاب -->
-    <meta name="description" content="Official website for Robin Linux OS. Lightweight, secure, and fast operating system designed for developers, ethical hackers, and power users created by Robin John." />
-    
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="EEaao47qBrGuM-wIQNZrPzXUiEB6f7wCf2ZhBI_yOrg" />
-    
-    <!-- ربط اللوجو كأيقونة لموقعك في نتائج بحث جوجل والمحافظة عليه (Favicon) -->
-    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
-    <link rel="shortcut icon" type="image/png" href="logo.png">
-    <link rel="apple-touch-icon" href="logo.png">
-    
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
         body {
-            background-color: #0b0f19;
-            color: #38bdf8;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 30px 15px;
+            padding: 50px;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            border: 2px solid #0284c7;
-            padding: 30px;
-            border-radius: 12px;
-            background-color: #111827;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-        }
-        .logo-img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 2px solid #38bdf8;
-            object-fit: cover;
-            margin-bottom: 15px;
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        .logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
         h1 {
+            color: #00ff66;
             font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px #38bdf8;
-        }
-        .subtitle {
-            font-size: 1.1rem;
-            color: #a855f7;
-            margin-bottom: 25px;
-            font-weight: bold;
         }
         p {
-            font-size: 1rem;
-            color: #94a3b8;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin: 25px 0;
-            text-align: left;
-        }
-        .feature-box {
-            background: #1f2937;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #38bdf8;
-        }
-        .feature-box h3 {
-            color: #38bdf8;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-        .feature-box p {
-            font-size: 0.9rem;
-            margin: 0;
-            color: #cbd5e1;
-        }
-        .btn-group {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            font-size: 1.2rem;
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
         }
         .btn {
-            display: block;
-            background-color: #38bdf8;
-            color: #0b0f19;
-            padding: 14px;
-            font-size: 1.1rem;
-            font-weight: bold;
+            background-color: #00ff66;
+            color: #000000;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-            box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
         }
         .btn:hover {
-            background-color: #0ea5e9;
-            color: #ffffff;
-        }
-        .btn-whatsapp {
-            background-color: #25d366;
-            color: #ffffff;
-            box-shadow: 0 0 10px rgba(37, 211, 102, 0.4);
-        }
-        .btn-whatsapp:hover {
-            background-color: #22c55e;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 0.85rem;
-            color: #64748b;
-        }
-        @media (max-width: 600px) {
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
+            background-color: #00cc52;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- اللوجو المدور -->
-        <img src="logo.png" alt="Robin Linux Logo" class="logo-img">
-        
-        <h1>ROBIN LINUX OS v1.0</h1>
-        <div class="subtitle">[ THE ULTIMATE CYBER & PROGRAMMING ENVIRONMENT ]</div>
-        
-        <p>
-            Welcome to the official command center of Robin Linux. Built specifically for elite developers, ethical hackers, and open-source enthusiasts who demand absolute control, high performance, and total system independence.
-        </p>
+    <!-- مكان اللوجو (تأكد أن اسم صورة اللوجو مطابق للصورة المرفوعة في المستودع) -->
+    <img src="logo.png" alt="Robin Linux OS Logo" class="logo">
 
-        <div class="features-grid">
-            <div class="feature-box">
-                <h3>⚡ Turbo Boost</h3>
-                <p>Advanced system optimization tools to maximize speed and efficiency during heavy workloads.</p>
-            </div>
-            <div class="feature-box">
-                <h3>🛡️ Cyber Security</h3>
-                <p>Pre-configured security toolkits and customized terminal environments for penetration testing.</p>
-            </div>
-            <div class="feature-box">
-                <h3>🔄 GitHub Sync</h3>
-                <p>Seamless core updates directly linked with the official repository for continuous development.</p>
-            </div>
-            <div class="feature-box">
-                <h3>🎨 Robin-Dark Theme</h3>
-                <p>An immersive, beautiful, and distraction-free dark UI tailored for long coding sessions.</p>
-            </div>
-        </div>
+    <h1>Robin Linux OS</h1>
+    <p>Official website for <strong>Robin Linux OS</strong>. Lightweight, secure, and fast operating system designed for developers, ethical hackers, and power users.</p>
 
-        <div class="btn-group">
-            <a href="https://github.com/Major309Robin/Robin-Linux" class="btn" target="_blank">📥 Download</a>
-            <a href="https://wa.me/201558640279" class="btn btn-whatsapp" target="_blank">Support & Developer Contact</a>
-        </div>
-
-        <div class="footer">
-            <p>Designed & Developed by <strong>Robin John</strong> | Open Source + People = A Brighter Future</p>
-        </div>
-    </div>
+    <a href="#" class="btn">Download ISO</a>
 
 </body>
 </html>
